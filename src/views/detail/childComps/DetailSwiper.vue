@@ -1,5 +1,5 @@
 <template>
-  <swiper v-if="topImg.length > 0" class="swiper">
+  <swiper v-if="topImg.length > 0" class="swiper" :autoPlay='false'>
     <slide v-for="(item,index) in topImg" :key="index" class="slide">
       <img :src="item" alt="">
     </slide>
@@ -39,5 +39,8 @@
   img {
     width: 100%;
     vertical-align: middle;
+  }
+  .wh_indicator{
+    color: #1296DB;
   }
 </style>
